@@ -1,0 +1,16 @@
+.container{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+
+}
+
+.container.block{
+    background-color: red;
+    padding: 225px;
+}
+
+.container.exit{
+    background-color: green;
+    padding: 200px;
+}
