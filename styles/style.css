@@ -1,0 +1,31 @@
+.menu{
+    display: grid;
+    grid-template-columns: 5;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(33,150,243);
+    background: linear-gradient(90deg, rgba(33,150,243,1) 70%, rgba(41,41,163,1) 100%);
+    margin: 20px 50px;
+    box-shadow: 5px 5px 10px 10px;
+    color: white;
+    
+}
+
+h1{
+    font-size: 40px;
+}
+
+.btn{
+    padding: 10px;
+    width: 200px;
+    margin: 8px auto;
+    background-color: rgb(229, 222, 222);
+    border-radius: 8px;
+    border: none;
+
+}
+
+.saldo{
+    padding-top: 25px;
+    text-align: center;
+}
