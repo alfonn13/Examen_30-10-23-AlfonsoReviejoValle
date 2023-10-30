@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //Hacemos un addEventListener al boton depositar cuando hacemos click
     depositar.addEventListener("click", () => {
         const cantidad = parseFloat(prompt("Indique la cantidad que quiere ingresar en la cuenta: "));
-        if (isNaN(cantidad) || cantidad < 0) {
+        if (isNaN(cantidad) || cantidad <= 0) {
             alert("Debes introducir un saldo adecuado la proxima vez.");
         } else {
             saldo += cantidad;
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //Hacemos un addEventListener al boton retirar cuando hacemos click
     retirar.addEventListener("click", () => {
         const cantidad = parseFloat(prompt("Indique la cantidad que quiere retirar de la cuenta: "));
-        if (isNaN(cantidad) || cantidad >= saldo || cantidad < 0) {
+        if (isNaN(cantidad) || cantidad > saldo || cantidad <= 0) {
             alert("Debes introducir un saldo adecuado la proxima vez.");    
         } else {
             saldo -= cantidad;

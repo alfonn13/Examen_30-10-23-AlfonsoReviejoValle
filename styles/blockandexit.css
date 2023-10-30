@@ -1,15 +1,22 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+body{
+    font-family: Rubik;
+}
 .container{
     font-size: 25px;
     text-align: center;
     color: white;
+    padding: 220px;
 }
 
 .container.block{
-    background-color: red;
-    padding: 225px;
+    background-color: red;   
 }
 
 .container.exit{
     background-color: green;
-    padding: 200px;
 }
