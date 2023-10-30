@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero Automatico</title>
+    <!--Añadimos la etiqueta link con el CSS para dar estilos en el HTML-->
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!--Implementamos el menu con sus respectivos botones-->
     <div class="menu">
         <h1>Cajero Automático</h1>
-        <button class="btn">Depositar Dinero</button>
-        <button class="btn">Retirar Dinero</button>
-        <button class="btn">Transferir Dinero</button>
-        <button class="btn">Cambiar Contraseña</button>
-        <button class="btn">Salir</button>
-        <div class="saldo">Su saldo es: <span id="saldo">100 $</span></div>
+        <button class="btn" id="depositar">Depositar Dinero</button>
+        <button class="btn" id="retirar">Retirar Dinero</button>
+        <button class="btn" id="transferir">Transferir Dinero</button>
+        <button class="btn" id="cambiocontraseña">Cambiar Contraseña</button>
+        <button class="btn" id="salir">Salir</button>
+        <div class="saldo">Su saldo es: <span id="saldo">1000 €</span></div>
     </div>
 
+    <!--Añadimos la etiqueta script para utilizar el JS en el HTML-->
     <script src="scripts/index.js"></script>
 
     

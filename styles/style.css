@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf) format("truetype");
+}
+
+body{
+    font-family: Rubik;
+}
+
 .menu{
     display: grid;
     grid-template-columns: 5;
@@ -6,7 +15,7 @@
     background: rgb(33,150,243);
     background: linear-gradient(90deg, rgba(33,150,243,1) 70%, rgba(41,41,163,1) 100%);
     margin: 20px 50px;
-    box-shadow: 5px 5px 10px 10px;
+    box-shadow: 5px 5px 10px black;
     color: white;
     
 }
@@ -22,7 +31,12 @@ h1{
     background-color: rgb(229, 222, 222);
     border-radius: 8px;
     border: none;
+    font-family: Rubik;
 
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 .saldo{
