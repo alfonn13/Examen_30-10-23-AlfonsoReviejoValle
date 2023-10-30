@@ -5,6 +5,7 @@
 
 body{
     font-family: Rubik;
+    background-color: rgb(215, 204, 204);
 }
 
 .menu{
@@ -14,8 +15,8 @@ body{
     padding: 50px;
     background: rgb(33,150,243);
     background: linear-gradient(90deg, rgba(33,150,243,1) 70%, rgba(41,41,163,1) 100%);
-    margin: 20px 50px;
-    box-shadow: 5px 5px 10px black;
+    margin: 40px 50px;
+    box-shadow: 8px 8px 10px black;
     color: white;
     
 }
@@ -42,4 +43,5 @@ h1{
 .saldo{
     padding-top: 25px;
     text-align: center;
+    font-size: 25px;
 }

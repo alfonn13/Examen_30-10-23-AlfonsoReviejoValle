@@ -65,16 +65,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     })
 
     transferir.addEventListener("click", ()=>{
-        
         const cantidad = parseFloat(prompt(`Indique la cantidad que quiere transferir a la cuenta: `));
-        console.log(cantidad);
-        console.log(saldo);
 
-        if(!isNaN(cantidad) && cantidad >= saldo && cantidad < 0 ){
+        if(!isNaN(cantidad) && cantidad < saldo && cantidad >= 0 ){
             const cuenta = prompt("Indica la cuenta bancaria a la que deseas transferir a la cuenta Bancaria:")
             if(validarIBAN(cuenta)){
-                console.log(saldo);
-                console.log(cantidad);
                 saldo-=cantidad;
                 alert(`Usted a transferido ${cantidad}€ a la cuenta bancaria ${cuenta}`)
                 actualizarSaldo();
@@ -90,6 +85,22 @@ document.addEventListener("DOMContentLoaded",()=>{
             alert("Cantidad invalida. Saldo insuficiente en la cuenta.");
         }
             
+    })
+
+    cambiarContraseña.addEventListener("click",()=>{
+        let pincambio = prompt("Indica el pin actual: ");
+            if(pincambio == PIN){
+                const nuevoPin = prompt("Indica el nuevo PIN: ");
+                alert(`Se ha cambiado exitosamente. Su nuevo pin es ${nuevoPin}`);
+                PIN = nuevoPin;
+            }else{
+                alert(`No se ha realizado ningun cambio. Ya que el pin no es correcto`)
+            }   
+    })
+
+    salir.addEventListener("click", ()=>{
+        alert("Ha seleccionado salir. Hasta pronto")
+        window.location.replace("../templates/exit.html");
     })
 
     
