@@ -1,3 +1,4 @@
+/*Importamos la fuente de Google Fonts, en mi caso utilize Rubik-Italic-VariableFont_wght.ttf*/
 @font-face {
     font-family: Rubik;
     src: url(../assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf) format("truetype");
@@ -26,7 +27,7 @@ h1{
 }
 
 .btn{
-    padding: 10px;
+    padding: 11px;
     width: 200px;
     margin: 8px auto;
     background-color: rgb(229, 222, 222);
@@ -41,7 +42,7 @@ h1{
 }
 
 .saldo{
-    padding-top: 25px;
+    padding-top: 20px;
     text-align: center;
     font-size: 25px;
 }
